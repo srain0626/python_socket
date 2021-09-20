@@ -7,7 +7,7 @@ ADDR = (HOST, PORT)
 BUF_SIZE = 1024
 
 c_S = socket(AF_INET, SOCK_STREAM)
-c_S.bind(ADDR)
+c_S.connect(ADDR)
 
 
 print("연결에 성공하였습니다.")
